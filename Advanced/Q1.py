@@ -2,7 +2,7 @@
 def get_even_length_strings(filename):
     even_length_strings = []
 
-    with open("D:\Study\ConsultAdd\Traning\docs.txt", "r") as file:
+    with open(filename, "r") as file:
 
         content=(file.read())
         for i in content.split():
@@ -10,7 +10,7 @@ def get_even_length_strings(filename):
                 even_length_strings.append(i)
         return even_length_strings
 
-filename="docs.txt"
+filename="D:\Study\ConsultAdd\Traning\docs.txt"
 a=get_even_length_strings(filename)
 
 print(' '.join(a))

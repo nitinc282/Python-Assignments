@@ -1,17 +1,10 @@
 
-def get_even_length_strings(filename):
-    even_length_strings = []
+def get_lines_strings(filename):
+    with open(filename, 'r') as file:  
+	    lines = file.readlines()
+        line_count = len(lines)
+    return line_count
 
-    with open("D:\Study\ConsultAdd\Traning\docs.txt", "r") as file:
-
-        content=(file.read())
-        for i in content.split():
-            if len(i)%2==0:
-                even_length_strings.append(i)
-        return even_length_strings
-
-filename="docs.txt"
-a=get_even_length_strings(filename)
-
-print(' '.join(a))
-
+filename="D:\Study\ConsultAdd\Traning\demo.txt"
+line_count=get_lines_strings(filename)
+print(f"The number of lines in {filename} is: {line_count}")

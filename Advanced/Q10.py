@@ -1,11 +1,12 @@
-Input_sentence = "Hello, World! Welcome to Python programming."
-Output_after_reverse = ""
+def count_customers_without_computer(N, S):
+    Costumer={}
+    for i in range(0, len(S)):
+        if i in S: #for in customer
+            del i
+        
 
-a=Input_sentence.split(' ')
-a.reverse()
-b=' '.join(a)
-print(b)
-
-
-
-
+# Example usage
+N = 3
+S = "GACCBDDBAGEE"
+output = count_customers_without_computer(N, S)
+print(output)  # Output should be 1

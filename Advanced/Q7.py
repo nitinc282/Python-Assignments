@@ -1,13 +1,11 @@
-string1 = input("Enter a string1 : ")
-string2 = input("Enter a string2 : ")
+def dictionary_from_lists(students,subjects):
+    Output={}
+    for key in students:
+        for value in subjects:
+            Output[key]=value
+    print(Output)
 
-# Sort both strings
-str1 = sorted(string1)
-str2 = sorted(string2)
-print("str1",str1)
-print("str2",str2)
+students=["Sam", "Alice", "Mona"] 
+subjects=["Commerce", "Science", "Computer"]
+dictionary_from_lists(students,subjects)
 
-if str1 == str2:
-    print("equal")
-else:
-    print("not equal")
