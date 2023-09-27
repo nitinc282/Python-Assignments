@@ -10,11 +10,11 @@ class time:
         total_hours=self.hours+other_time.hours+ extra_hours
         t3=time(total_hours,minutes_left)
         return t3
-    '''
+    
     def displaytime(self):
         total_hours = self.hours * 60 + self.minutes
         return total_hours
-    '''
+    
     def displayminutes(self):
         total_minutes = self.hours * 60 + self.minutes
         return total_minutes

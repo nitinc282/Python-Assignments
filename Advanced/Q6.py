@@ -1,5 +1,5 @@
 #Single Inheritance Example:
-'''
+
 class Person:
     def __init__(self,name='',age=0):
         self.name=name
@@ -16,13 +16,12 @@ class Student(Person):
     def details2(self):
         return f"{super().details1()} and Student class is {self.classs} and student branch is {self.branch}"
     
-
 S=Student("Amit", 34,"B.tech","CS")
 print(S.details2())
 print(S.details1())
 
 
-Multiple inheritance
+#Multiple inheritance
 class Person:
     def __init__(self,name,age):
         self.name=name
@@ -53,7 +52,7 @@ programmer = Programmer("Alice", 30, "JavaScript", "Skill enhance program")
 print(programmer.details3())
 print(programmer.details2())
 print(programmer.details1())
-'''
+
 # Multilevel inheritance
 class Vehical:
     def __init__(self,brand):
@@ -81,7 +80,6 @@ class ElectronicCar(Car):
 electric_car = ElectronicCar("Tesla", "Model S", "Lithium-ion")
 print(electric_car.details3())  
 
-    
-        
 
+jose portlia -python udemy
 
